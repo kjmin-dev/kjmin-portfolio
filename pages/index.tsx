@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 import { type NextPage } from 'next';
 import Head from 'next/head';
-import HeadSection from '../components/main_sections/HeadSection';
+import HeadSection from '../components/sections/HeadSection';
+import WorkExperienceSection from '../components/sections/WorkExperience';
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +18,10 @@ const Home: NextPage = () => {
           content="width=device-width, initial-scale=1.0, user-scalable=no"
         />
       </Head>
-      <HeadSection />
+      <main className="max-w-3xl m-auto px-6 py-8 sm:px-3 sm:py-6">
+        <HeadSection />
+        <WorkExperienceSection />
+      </main>
     </Fragment>
   );
 };

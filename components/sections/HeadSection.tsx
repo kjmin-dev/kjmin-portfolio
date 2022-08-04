@@ -1,4 +1,4 @@
-import { Artboard, Stack, Link } from 'react-daisyui';
+import { Link } from 'react-daisyui';
 
 import {
   AiOutlineMail as MailIcon,
@@ -10,7 +10,7 @@ import MyInfo from '../../contents/myinfo.json';
 
 export default function HeadSection() {
   return (
-    <header className="flex flex-col space-y-2 max-w-3xl m-auto px-6 py-8 sm:px-3 sm:py-6">
+    <header className="flex flex-col space-y-2">
       <section className="prose prose-h3:mb-0">
         <h3>{MyInfo.name}</h3>
         <p>{MyInfo.job}</p>
