@@ -1,5 +1,4 @@
-import { Box, Container, Heading, IconButton, Link, Text } from 'theme-ui';
-import { VStack } from '../system/Stack';
+import { Artboard, Stack, Link } from 'react-daisyui';
 
 import {
   AiOutlineMail as MailIcon,
@@ -11,29 +10,27 @@ import MyInfo from '../../contents/myinfo.json';
 
 export default function HeadSection() {
   return (
-    <Container px={3} py={3} sx={{ width: ['100%', '80%', '1024px'] }}>
-      <VStack gap={1}>
-        <Heading>{MyInfo.name}</Heading>
-        <Text>{MyInfo.job}</Text>
-      </VStack>
-      <VStack gap={0.5} mt={2}>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <MailIcon fontSize={20} />
-          <Link ml={1} href={MyInfo.links.email.url}>
-            {MyInfo.links.email.display}
-          </Link>
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <GithubIcon fontSize={20} />
-          <Link ml={1} mr={3} href={MyInfo.links.github.url}>
+    <header className="flex flex-col space-y-2 max-w-3xl m-auto px-6 py-8 sm:px-3 sm:py-6">
+      <section className="prose prose-h3:mb-0">
+        <h3>{MyInfo.name}</h3>
+        <p>{MyInfo.job}</p>
+      </section>
+      <section>
+        <Link href={MyInfo.links.email.url} className="flex flex-row mb-1">
+          <MailIcon fontSize={20} className="mr-2" />
+          {MyInfo.links.email.display}
+        </Link>
+        <div className="flex col-auto space-x-2">
+          <Link href={MyInfo.links.github.url} className="flex flex-row">
+            <GithubIcon fontSize={20} className="mr-2" />
             {MyInfo.links.github.display}
           </Link>
-          <LinkedinIcon fontSize={20} />
-          <Link ml={1} href={MyInfo.links.linkedin.url}>
+          <Link href={MyInfo.links.linkedin.url} className="flex flex-row">
+            <LinkedinIcon fontSize={20} className="mr-2" />
             {MyInfo.links.linkedin.display}
           </Link>
-        </Box>
-      </VStack>
-    </Container>
+        </div>
+      </section>
+    </header>
   );
 }

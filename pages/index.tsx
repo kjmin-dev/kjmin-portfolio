@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
+import { Fragment } from 'react';
+import { type NextPage } from 'next';
 import Head from 'next/head';
-import { Fragment } from 'theme-ui/jsx-runtime';
 import HeadSection from '../components/main_sections/HeadSection';
 
 const Home: NextPage = () => {
