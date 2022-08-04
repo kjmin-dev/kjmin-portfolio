@@ -4,7 +4,7 @@ import { swiss } from '@theme-ui/presets';
 
 import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function Application({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
       <ThemeProvider theme={swiss}>
@@ -14,4 +14,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default Application;

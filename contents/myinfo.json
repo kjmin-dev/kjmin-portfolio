@@ -1,0 +1,18 @@
+{
+  "name": "Kyoungjun Min",
+  "job": "Frontend Developer",
+  "links": {
+    "email": {
+      "url": "kjmin.dev@gmail.com",
+      "display": "kjmin.dev@gmail.com"
+    },
+    "github": {
+      "url": "https://github.com/kjmin-dev",
+      "display": "kjmin-dev"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/schnellehand",
+      "display": "schnellehand"
+    }
+  }
+}
