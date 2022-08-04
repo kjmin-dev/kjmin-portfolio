@@ -1,11 +1,15 @@
 import { RecoilRoot } from 'recoil';
-import '../styles/globals.css';
+import { ThemeProvider } from 'theme-ui';
+import { swiss } from '@theme-ui/presets';
+
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
-      <Component {...pageProps} />
+      <ThemeProvider theme={swiss}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </RecoilRoot>
   );
 }
