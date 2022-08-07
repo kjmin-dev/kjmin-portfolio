@@ -7,6 +7,7 @@ import type {
   ExperienceListItem,
   ExperienceList,
 } from '../../contents/experience.type';
+import { PlainBadgeList } from '../system/PlainBadgeList';
 
 function WorkExperienceItem({
   experience,
@@ -14,7 +15,7 @@ function WorkExperienceItem({
   experience: ExperienceListItem;
 }) {
   return (
-    <article className="mt-4">
+    <article className="mt-5">
       {/* Company/Position */}
       <div>
         <div className="inline-block font-bold">{experience.position}</div>
@@ -35,11 +36,7 @@ function WorkExperienceItem({
         ))}
       </ul>
       <div className="mt-2">
-        {experience.keywords.map(keyword => (
-          <span key={keyword} className="badge ml-2">
-            {keyword}
-          </span>
-        ))}
+        <PlainBadgeList badges={experience.keywords} />
       </div>
     </article>
   );
@@ -57,7 +54,7 @@ function WorkExperienceList({ experiences }: { experiences: ExperienceList }) {
 
 export default function WorkExperienceSection() {
   return (
-    <section>
+    <section className="mt-10">
       <DividerText>{`${section.experience} (${exp.experiences.length})`}</DividerText>
       <WorkExperienceList experiences={[...exp.experiences]} />
     </section>

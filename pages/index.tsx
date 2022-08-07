@@ -3,6 +3,7 @@ import { type NextPage } from 'next';
 import Head from 'next/head';
 import HeadSection from '../components/sections/Head.secton';
 import WorkExperienceSection from '../components/sections/WorkExperience.secdtion';
+import EducationSection from '../components/sections/Education.section';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <main className="max-w-3xl m-auto px-6 py-8 sm:px-3 sm:py-6">
         <HeadSection />
         <WorkExperienceSection />
+        <EducationSection />
       </main>
     </Fragment>
   );

@@ -9,7 +9,7 @@ export default function DividerText({
   children,
 }: PropsWithChildren<DividerTextProps>) {
   return (
-    <div className="relative flex pt-6 items-center">
+    <div className="relative flex items-center">
       {children}
       <div className={`flex-grow border-t border-gray-400 ml-${spacing}`}></div>
     </div>

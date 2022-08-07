@@ -1,0 +1,28 @@
+{
+  "educations": [
+    {
+      "name": "Ajou University",
+      "duration": "2018 ~ 2020",
+      "degree": "Master of Science",
+      "major": "Computer Engineering",
+      "description": "Participated in R&D of messaging system for efficient bandwidth usage and fault tolerance in tactical networks",
+      "keywords": [
+        "MQTT",
+        "DDS",
+        "Messaging Systems",
+        "Lightweight Messaging Protocols"
+      ]
+    },
+    {
+      "name": "Wonkwang University",
+      "duration": "2014 ~ 2018",
+      "degree": "Bachelor of Engineering",
+      "major": "Computer Engineering",
+      "keywords": [
+        "Computer Network",
+        "Operation System",
+        "Computational Thinking"
+      ]
+    }
+  ]
+}
