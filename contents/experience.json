@@ -1,0 +1,25 @@
+{
+  "experiences": [
+    {
+      "position": "Frontend Developer",
+      "company": "Covision Corportaion",
+      "url": "https://www.covision.co.kr/solution/talk",
+      "description": "Developing Eumtalk: Cross-platform in-house messenger application",
+      "experiences": [
+        "Developed React based Web/Desktop universal client",
+        "Developed React-native based mobile client",
+        "Experience of improving rendering performance through optimization of component operation"
+      ],
+      "keywords": [
+        "React.js",
+        "React-Native",
+        "Redux-saga",
+        "SWR",
+        "Electron",
+        "SQLite"
+      ],
+      "startedAt": "2020-12",
+      "endedAt": ""
+    }
+  ]
+}

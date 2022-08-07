@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { type NextPage } from 'next';
 import Head from 'next/head';
 import HeadSection from '../components/sections/HeadSection';
-import WorkExperienceSection from '../components/sections/WorkExperience';
+import WorkExperienceSection from '../components/sections/WorkExperienceSection';
 
 const Home: NextPage = () => {
   return (
