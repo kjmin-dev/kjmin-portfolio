@@ -1,3 +1,4 @@
+import { Badge } from 'react-daisyui';
 import { Fragment } from 'react';
 
 export interface PlainBadgeListProps {
@@ -11,9 +12,9 @@ export const PlainBadgeList = ({
 }: PlainBadgeListProps) => (
   <Fragment>
     {badges.map(badge => (
-      <span key={badge} className={`badge ml-${spacing}`}>
+      <Badge key={badge} className={`ml-${spacing}`}>
         {badge}
-      </span>
+      </Badge>
     ))}
   </Fragment>
 );
