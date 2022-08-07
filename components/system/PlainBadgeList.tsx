@@ -6,13 +6,10 @@ export interface PlainBadgeListProps {
   spacing?: number;
 }
 
-export const PlainBadgeList = ({
-  badges,
-  spacing = 2,
-}: PlainBadgeListProps) => (
+export const PlainBadgeList = ({ badges }: PlainBadgeListProps) => (
   <Fragment>
     {badges.map(badge => (
-      <Badge key={badge} className={`ml-${spacing}`}>
+      <Badge key={badge} className={`ml-2`}>
         {badge}
       </Badge>
     ))}
