@@ -8,6 +8,7 @@
       "experiences": [
         "Developing React based Web/Desktop universal client",
         "Developing React-native based mobile client",
+        "UI implementation based on plain JSX and styled-components",
         "Realtime messaging application development based on Socket.io",
         "Experience of improving rendering performance through optimization of component operation"
       ],
@@ -16,6 +17,7 @@
         "React-Native",
         "Redux-saga",
         "Socket.io",
+        "Styled-components",
         "SWR",
         "Electron",
         "SQLite"

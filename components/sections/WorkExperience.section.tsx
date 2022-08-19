@@ -1,13 +1,14 @@
 import { Fragment } from 'react';
+import { Link } from 'react-daisyui';
 
-import section from '../../contents/section.json';
 import DividerText from '../system/DividerText';
+import { PlainBadgeList } from '../system/PlainBadgeList';
+import section from '../../contents/section.json';
 import exp from '../../contents/experience.json';
 import type {
   ExperienceListItem,
   ExperienceList,
 } from '../../contents/experience.type';
-import { PlainBadgeList } from '../system/PlainBadgeList';
 
 function WorkExperienceItem({
   experience,
@@ -25,6 +26,14 @@ function WorkExperienceItem({
       <div className="font-thin">
         {experience.startedAt} ~ {experience.endedAt}
       </div>
+      {/* URL */}
+      <Link
+        href={experience.url}
+        target="_blank"
+        rel="noreferrer"
+        className="font-thin hover:underline">
+        {experience.url}
+      </Link>
       {/* Description */}
       <div className="mt-2">{experience.description}</div>
       {/* Experiences */}

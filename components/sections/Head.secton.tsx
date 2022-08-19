@@ -16,16 +16,25 @@ export default function HeadSection() {
         <p>{MyInfo.job}</p>
       </section>
       <section>
-        <Link href={MyInfo.links.email.url} className="flex flex-row mb-1">
+        <Link
+          href={MyInfo.links.email.url}
+          className="flex flex-row mb-1 hover:underline"
+          rel="noreferrer">
           <MailIcon fontSize={20} className="mr-2" />
           {MyInfo.links.email.display}
         </Link>
         <div className="flex col-auto space-x-2">
-          <Link href={MyInfo.links.github.url} className="flex flex-row">
+          <Link
+            href={MyInfo.links.github.url}
+            className="flex flex-row hover:underline"
+            rel="noreferrer">
             <GithubIcon fontSize={20} className="mr-2" />
             {MyInfo.links.github.display}
           </Link>
-          <Link href={MyInfo.links.linkedin.url} className="flex flex-row">
+          <Link
+            href={MyInfo.links.linkedin.url}
+            className="flex flex-row hover:underline"
+            rel="noreferrer">
             <LinkedinIcon fontSize={20} className="mr-2" />
             {MyInfo.links.linkedin.display}
           </Link>
