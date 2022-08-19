@@ -1,10 +1,6 @@
-import { Fragment, useCallback, useMemo } from 'react';
+import { Fragment, useMemo } from 'react';
 import { Link } from 'react-daisyui';
-import {
-  differenceInMonths,
-  formatDuration,
-  intervalToDuration,
-} from 'date-fns';
+import { formatDuration, intervalToDuration } from 'date-fns';
 
 import DividerText from '../system/DividerText';
 import { PlainBadgeList } from '../system/PlainBadgeList';
@@ -52,7 +48,7 @@ function WorkExperienceItem({
       </div>
       {/* Employment Period */}
       <div className="font-thin">
-        {experience.startedAt} ~ {experience.endedAt}
+        {experience.startedAt} ~ {experience.endedAt || 'Current'}
       </div>
       {employmentPeriod && (
         <div className="font-thin text-sm">({employmentPeriod})</div>
