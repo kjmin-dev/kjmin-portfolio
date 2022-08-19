@@ -14,6 +14,7 @@
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.8",
     "daisyui": "^2.22.0",
+    "date-fns": "^2.29.2",
     "framer-motion": "^6.5.1",
     "next": "12.2.3",
     "postcss": "^8.4.14",
