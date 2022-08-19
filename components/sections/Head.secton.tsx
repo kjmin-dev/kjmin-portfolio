@@ -7,6 +7,7 @@ import {
 } from 'react-icons/ai';
 
 import MyInfo from '../../contents/myinfo.json';
+import QuoteBox from '../system/QuoteBox';
 
 export default function HeadSection() {
   return (
@@ -39,6 +40,7 @@ export default function HeadSection() {
             {MyInfo.links.linkedin.display}
           </Link>
         </div>
+        <QuoteBox text={MyInfo.quote} />
       </section>
     </header>
   );
