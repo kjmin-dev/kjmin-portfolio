@@ -11,28 +11,28 @@
     "env:vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.4",
-    "autoprefixer": "^10.4.8",
-    "daisyui": "^2.22.0",
-    "date-fns": "^2.29.2",
+    "@tailwindcss/typography": "^0.5.8",
+    "autoprefixer": "^10.4.13",
+    "daisyui": "^2.41.0",
+    "date-fns": "^2.29.3",
     "framer-motion": "^6.5.1",
-    "next": "12.2.3",
-    "postcss": "^8.4.14",
+    "next": "13.0.4",
+    "postcss": "^8.4.19",
     "react": "18.2.0",
-    "react-daisyui": "^2.1.0",
+    "react-daisyui": "^2.4.6",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "recoil": "^0.7.4",
-    "tailwindcss": "^3.1.7"
+    "react-icons": "^4.6.0",
+    "recoil": "^0.7.6",
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@types/node": "18.6.3",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "eslint": "^8.21.0",
-    "eslint-config-next": "12.2.3",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "13.0.4",
     "prettier": "^2.7.1",
-    "typescript": "4.7.4"
+    "typescript": "4.9.3"
   },
   "packageManager": "yarn@3.2.2"
 }
