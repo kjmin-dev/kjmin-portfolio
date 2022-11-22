@@ -1,7 +1,17 @@
 {
   "experiences": [
     {
-      "position": "Frontend Developer",
+      "position": "Frontend Developer (전문연구요원)",
+      "company": "Deep Bio Inc",
+      "url": "http://www.deepbio.co.kr/",
+      "description": "DeepDx Prostate: AI software for prostate cancer",
+      "experiences": [],
+      "keywords": [],
+      "startedAt": "2022-12",
+      "endedAt": ""
+    },
+    {
+      "position": "Frontend Developer (전문연구요원)",
       "company": "Covision Corportaion",
       "url": "https://www.covision.co.kr/solution/talk",
       "description": "Eumtalk: Cross-platform inhouse messenger application",
@@ -25,7 +35,7 @@
         "SQLite"
       ],
       "startedAt": "2020-12",
-      "endedAt": ""
+      "endedAt": "2022-12"
     }
   ]
 }
